@@ -37,7 +37,7 @@ const patentDetails = {
     details: `
       <div style="display: flex; justify-content: center; margin-bottom: 20px;">
         <div style="text-align: center; max-width: 100%;">
-          <img src="ventilation_system/patent_certificate.jpg" alt="換気設備 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <img src="ventilation_system/ventilation_equipment_patent.jpg" alt="換気設備 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
           <p style="margin-top: 8px; font-style: italic;">特許証</p>
         </div>
       </div>
@@ -180,7 +180,7 @@ const patentDetails = {
     details: `
       <div style="display: flex; justify-content: center; margin-bottom: 20px;">
         <div style="text-align: center; max-width: 100%;">
-          <img src="steam_pipe_freeze_prevention/patent_certificate.jpg" alt="蒸気配管系凍結防止システム 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <img src="steam_pipe_freeze_prevention/steam_pipe_freeze_prevention_patent.jpg" alt="蒸気配管系凍結防止システム 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
           <p style="margin-top: 8px; font-style: italic;">特許証</p>
         </div>
       </div>
@@ -210,7 +210,7 @@ const patentDetails = {
     details: `
       <div style="display: flex; justify-content: center; margin-bottom: 20px;">
         <div style="text-align: center; max-width: 100%;">
-          <img src="stockyard_freeze_prevention/patent_certificate.jpg" alt="ストックヤード骨材凍結防止装置 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <img src="stockyard_freeze_prevention/stockyard_freeze_prevention_patent.jpg" alt="ストックヤード骨材凍結防止装置 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
           <p style="margin-top: 8px; font-style: italic;">特許証</p>
         </div>
       </div>
