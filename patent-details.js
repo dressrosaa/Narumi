@@ -43,7 +43,7 @@ const patentDetails = {
     number: "特許第6086457号",
     description: "Y型ストレーナの清掃を効率化する装置。メンテナンス性向上とダウンタイム削減に貢献します。",
     details: `
-      <div class="centered-image">
+      <div class="centered-image" style="text-align: center;">
         <img src="Ytype/Y_type_strainer_patent.jpg" alt="Y型ストレーナ清掃装置 特許証" class="patent-image">
         <p class="image-caption">特許証</p>
       </div>
