@@ -219,26 +219,20 @@
     /* ===== ヘッダー ===== */
     .header {
       position: fixed;
+      width: 100%;
       top: 0;
       left: 0;
-      width: 100%;
-      height: var(--header-height);
-      background-color: #222222;
-      /* 黒色の背景に変更 */
-      box-shadow: 0 2px 10px var(--shadow-color);
       z-index: 1000;
-      transition: transform 0.4s;
-    }
-
-    .header.hidden {
-      transform: translateY(-100%);
+      background-color: var(--dark-color);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
     }
 
     .header-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 100%;
+      padding: 15px 0;
     }
 
     .logo {
@@ -246,18 +240,11 @@
       align-items: center;
     }
 
-    .logo-img {
-      height: 50px;
-      margin-right: 20px;
-      /* 間隔を10pxから20pxに増やす */
-    }
-
     .logo-text {
-      font-family: 'Rubik', 'Noto Sans JP', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
-      font-size: 1.5rem;
-      color: #FFFFFF;
-      /* 白色のテキストに変更 */
+      color: white;
+      margin-left: 10px;
     }
 
     .nav-menu {
@@ -270,7 +257,7 @@
     }
 
     .nav-link {
-      color: var(--text-color);
+      color: white;
       font-weight: 500;
       transition: color var(--transition-speed);
       position: relative;
@@ -278,17 +265,17 @@
 
     .nav-link:hover,
     .nav-link.active {
-      color: var(--primary-color);
+      color: var(--accent-color);
     }
 
     .nav-link::after {
       content: '';
       position: absolute;
-      bottom: -5px;
-      left: 0;
       width: 0;
       height: 2px;
-      background-color: var(--primary-color);
+      bottom: -5px;
+      left: 0;
+      background-color: var(--accent-color);
       transition: width var(--transition-speed);
     }
 
@@ -307,8 +294,8 @@
       width: 25px;
       height: 3px;
       margin: 5px auto;
-      background-color: var(--text-color);
-      transition: all var(--transition-speed);
+      background-color: white;
+      transition: all 0.3s ease-in-out;
     }
 
     /* ===== ヒーローセクション ===== */
