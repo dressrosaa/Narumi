@@ -4,7 +4,18 @@ const patentDetails = {
     title: "蒸気配管系電磁弁減圧弁装置",
     number: "特許第7387188号",
     description: "蒸気配管系における電磁弁と減圧弁を組み合わせた革新的な装置。省エネルギー化と安全性向上を実現します。",
-    details: "本特許は、蒸気配管系において電磁弁と減圧弁を効果的に組み合わせることで、従来の装置と比較して大幅な省エネルギー化と安全性の向上を実現する技術です。特に寒冷地での蒸気配管系の安定稼働に貢献し、エネルギー消費を最大30%削減することが可能です。",
+    details: `
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <div style="text-align: center; max-width: 100%;">
+          <img src="solenoid-valve/pressure_reducing_valve_patent.jpg" alt="蒸気配管系電磁弁減圧弁装置 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <p style="margin-top: 8px; font-style: italic;">特許証</p>
+        </div>
+      </div>
+      
+      <div class="patent-section">
+        <p>本特許は、蒸気配管系において電磁弁と減圧弁を効果的に組み合わせることで、従来の装置と比較して大幅な省エネルギー化と安全性の向上を実現する技術です。特に寒冷地での蒸気配管系の安定稼働に貢献し、エネルギー消費を最大30%削減することが可能です。</p>
+      </div>
+    `,
     features: [
       "電磁弁と減圧弁の最適配置による圧力損失の最小化",
       "温度センサーと連動した自動制御システム",
@@ -17,7 +28,7 @@ const patentDetails = {
       "メンテナンスコストの削減",
       "安全性の向上"
     ],
-    image: "solenoid-valve/img4.jpg"
+    image: "solenoid-valve/pressure_reducing_valve_patent.jpg"
   },
   "7264530": {
     title: "換気設備",
