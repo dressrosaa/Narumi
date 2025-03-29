@@ -34,7 +34,18 @@ const patentDetails = {
     title: "換気設備",
     number: "特許第7264530号",
     description: "効率的な換気を実現する特許技術。エネルギー消費を抑えながら最適な環境を維持します。",
-    details: "本特許は、工場や大型施設における換気効率を大幅に向上させる技術です。従来の換気設備と比較して、同等の換気性能を維持しながらエネルギー消費を最大25%削減することが可能です。特に高温多湿環境での効果が顕著であり、作業環境の改善にも貢献します。",
+    details: `
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <div style="text-align: center; max-width: 100%;">
+          <img src="ventilation_system/patent_certificate.jpg" alt="換気設備 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <p style="margin-top: 8px; font-style: italic;">特許証</p>
+        </div>
+      </div>
+      
+      <div class="patent-section">
+        <p>本特許は、工場や大型施設における換気効率を大幅に向上させる技術です。従来の換気設備と比較して、同等の換気性能を維持しながらエネルギー消費を最大25%削減することが可能です。特に高温多湿環境での効果が顕著であり、作業環境の改善にも貢献します。</p>
+      </div>
+    `,
     features: [
       "気流解析に基づいた最適な換気口配置",
       "温湿度センサーと連動した自動制御システム",
@@ -47,7 +58,7 @@ const patentDetails = {
       "メンテナンスの簡素化",
       "遠隔監視による運用効率の向上"
     ],
-    image: "https://images.unsplash.com/photo-1581093502632-b6a5baae2d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    image: "ventilation_system/patent_certificate.jpg"
   },
   "6086457": {
     title: "Y型ストレーナ清掃装置",
@@ -166,7 +177,18 @@ const patentDetails = {
     title: "蒸気配管系凍結防止システム",
     number: "特許第6049104号",
     description: "寒冷地での蒸気配管凍結を防止する革新的なシステム。安定稼働と省エネルギー化に貢献します。",
-    details: "本特許は、寒冷地における蒸気配管系の凍結問題を解決する革新的なシステムです。従来の凍結防止方法と比較して、エネルギー消費を最大40%削減しながら、確実な凍結防止を実現します。特に-30℃以下の極寒環境でも安定した性能を発揮し、工場や施設の安定稼働に貢献します。",
+    details: `
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <div style="text-align: center; max-width: 100%;">
+          <img src="steam_pipe_freeze_prevention/patent_certificate.jpg" alt="蒸気配管系凍結防止システム 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <p style="margin-top: 8px; font-style: italic;">特許証</p>
+        </div>
+      </div>
+      
+      <div class="patent-section">
+        <p>本特許は、寒冷地における蒸気配管系の凍結問題を解決する革新的なシステムです。従来の凍結防止方法と比較して、エネルギー消費を最大40%削減しながら、確実な凍結防止を実現します。特に-30℃以下の極寒環境でも安定した性能を発揮し、工場や施設の安定稼働に貢献します。</p>
+      </div>
+    `,
     features: [
       "配管内の微小循環を維持する独自機構",
       "温度センサーネットワークによる精密監視",
@@ -179,13 +201,24 @@ const patentDetails = {
       "メンテナンスコストの削減",
       "システム寿命の延長"
     ],
-    image: "https://images.unsplash.com/photo-1581093804742-c1a5d7e4b828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    image: "steam_pipe_freeze_prevention/patent_certificate.jpg"
   },
   "4257299": {
     title: "ストックヤード骨材凍結防止装置",
     number: "特許第4257299号",
     description: "ストックヤードの骨材凍結を防止する装置。寒冷地での作業効率向上と品質維持に貢献します。",
-    details: "本特許は、寒冷地のコンクリート製造現場におけるストックヤード骨材の凍結問題を解決する装置です。従来の加熱方式と比較して、エネルギー効率を大幅に向上させながら、骨材の品質を維持することが可能です。特に大規模なストックヤードでの効果が顕著であり、冬季のコンクリート製造における安定生産に貢献します。",
+    details: `
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <div style="text-align: center; max-width: 100%;">
+          <img src="stockyard_freeze_prevention/patent_certificate.jpg" alt="ストックヤード骨材凍結防止装置 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <p style="margin-top: 8px; font-style: italic;">特許証</p>
+        </div>
+      </div>
+      
+      <div class="patent-section">
+        <p>本特許は、寒冷地のコンクリート製造現場におけるストックヤード骨材の凍結問題を解決する装置です。従来の加熱方式と比較して、エネルギー効率を大幅に向上させながら、骨材の品質を維持することが可能です。特に大規模なストックヤードでの効果が顕著であり、冬季のコンクリート製造における安定生産に貢献します。</p>
+      </div>
+    `,
     features: [
       "蒸気を利用した効率的な加熱システム",
       "骨材特性に応じた温度制御",
@@ -198,13 +231,24 @@ const patentDetails = {
       "骨材品質の安定維持",
       "作業環境の改善"
     ],
-    image: "https://images.unsplash.com/photo-1581093583449-8e8b57c5096c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    image: "stockyard_freeze_prevention/patent_certificate.jpg"
   },
   "3603796": {
     title: "コンクリート二次製品養生装置",
     number: "特許第3603796号",
     description: "コンクリート二次製品の養生を効率的に行う装置。品質向上と生産性向上を実現します。",
-    details: "本特許は、コンクリート二次製品の製造における養生工程を効率化する装置です。蒸気を利用した独自の養生方式により、従来の方法と比較して養生時間を最大30%短縮しながら、製品強度を10%向上させることが可能です。特に大型のコンクリート二次製品の製造に適しており、生産効率と品質の両面で大きなメリットを提供します。",
+    details: `
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <div style="text-align: center; max-width: 100%;">
+          <img src="concrete_second/patent_certificate.jpg" alt="コンクリート二次製品養生装置 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <p style="margin-top: 8px; font-style: italic;">特許証</p>
+        </div>
+      </div>
+      
+      <div class="patent-section">
+        <p>本特許は、コンクリート二次製品の製造における養生工程を効率化する装置です。蒸気を利用した独自の養生方式により、従来の方法と比較して養生時間を最大30%短縮しながら、製品強度を10%向上させることが可能です。特に大型のコンクリート二次製品の製造に適しており、生産効率と品質の両面で大きなメリットを提供します。</p>
+      </div>
+    `,
     features: [
       "均一な蒸気分布を実現する独自ノズル配置",
       "製品サイズに応じた養生条件の自動調整",
@@ -217,7 +261,7 @@ const patentDetails = {
       "エネルギー消費の削減",
       "作業環境の改善"
     ],
-    image: "https://images.unsplash.com/photo-1581093794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    image: "concrete_second/patent_certificate.jpg"
   }
 };
 
