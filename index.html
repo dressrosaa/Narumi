@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>株式会社ボイラエンジニアリング | 蒸気設備専門</title>
+  <meta name="description" content="株式会社ボイラエンジニアリングのホームページです。蒸気設備専門。蒸気配管凍結防止に耐凍式スチームトラップ。燃費削減省エネにコンクリート蒸気養生制御装置">
+
+  <!-- Open Graph Protocol -->
+  <meta property="og:url" content="https://www.boiler-e.com/">
+  <meta property="og:title" content="株式会社ボイラエンジニアリング | 蒸気設備専門">
+  <meta property="og:image" content="https://www.boiler-e.com/assets/images/og-image.jpg">
+  <meta property="og:description" content="株式会社ボイラエンジニアリングのホームページです。蒸気設備専門。蒸気配管凍結防止に耐凍式スチームトラップ。燃費削減省エネにコンクリート蒸気養生制御装置">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="株式会社ボイラエンジニアリング">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- 特許モーダル用CSS -->
+  <link rel="stylesheet" href="patent-modal.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%230066CC'/%3E%3Cpath d='M30,30 C40,20 60,20 70,30 C80,40 80,60 70,70 C60,80 40,80 30,70 C20,60 20,40 30,30 Z' fill='white'/%3E%3C/svg%3E"
+    type="image/svg+xml">
+
+  <style>
+    /* ===== CSS スタイルはここに記述します ===== */
+
+    /* ===== 基本設定 ===== */
+    :root {
+      --primary-color: #0066CC;
+      --secondary-color: #607D8B;
+      --accent-color: #0066cc;
+      --base-color: #F5F5F5;
+      --text-color: #333333;
+      --light-text: #FFFFFF;
+      --dark-text: #222222;
+      --border-color: #DDDDDD;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+
+      --header-height: 80px;
+      --section-padding: 80px 0;
+      --container-padding: 0 20px;
+
+      --transition-speed: 0.3s;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text-color);
+      background-color: var(--base-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background-color: var(--primary-color);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color var(--transition-speed);
+    }
+
+    a:hover {
+      color: var(--accent-color);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--container-padding);
+    }
+
+    .section {
+      padding: var(--section-padding);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      display: inline-block;
+    }
+
+    .section-title h2::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--primary-color);
+      color: var(--light-text);
+      border: none;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color var(--transition-speed), transform var(--transition-speed);
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #0055AA;
+      color: var(--light-text);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: var(--secondary-color);
+    }
+
+    .btn-secondary:hover {
+      background-color: #4B6773;
+    }
+
+    .btn-accent {
+      background-color: var(--accent-color);
+    }
+
+    .btn-accent:hover {
+      background-color: #C62828;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mb-1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .mb-2 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 2rem;
+    }
+
+    .mb-5 {
+      margin-bottom: 3rem;
+    }
+
+    /* ===== ヘッダー ===== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--header-height);
+      background-color: #222222;
+      /* 黒色の背景に変更 */
+      box-shadow: 0 2px 10px var(--shadow-color);
+      z-index: 1000;
+      transition: transform 0.4s;
+    }
+
+    .header.hidden {
+      transform: translateY(-100%);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 50px;
+      margin-right: 20px;
+      /* 間隔を10pxから20pxに増やす */
+    }
+
+    .logo-text {
+      font-family: 'Rubik', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      /* 白色のテキストに変更 */
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-item {
+      margin-left: 30px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #FFFFFF;
+      /* 白色のテキストに変更 */
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #FFFFFF;
+      /* 白色の下線に変更 */
+      transition: width var(--transition-speed);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .hamburger-line {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #FFFFFF;
+      /* 白色に変更 */
+      margin: 5px 0;
+      transition: transform var(--transition-speed), opacity var(--transition-speed);
+    }
+
+    /* ===== ヒーローセクション ===== */
+    .hero {
+      height: 100vh;
+      min-height: 600px;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('top_low_r.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--light-text);
+      padding-top: var(--header-height);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.7);
+      /* 文字の背景に半透明の黒を追加 */
+      padding: 30px;
+      /* パディングを追加 */
+      border-radius: 10px;
+      /* 角を丸くする */
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      /* フォントサイズを小さくして黒枠内に収める */
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards 0.5s;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      /* テキストに影を追加 */
+    }
+
+    /* PC表示時は改行なしにする */
+    @media (min-width: 769px) {
+      .hero-title {
+        white-space: nowrap;
+      }
+    }
+
+    /* スマホ表示時のフォントサイズ調整 */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+        white-space: normal;
+        /* スマホでは改行を許可 */
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards 0.8s;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+      /* テキストに影を追加 */
+    }
+
+    .hero-btn {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards 1.1s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== 会社概要セクション ===== */
+    .about {
+      background-color: #FFFFFF;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-image {
+      flex: 1;
+      min-width: 300px;
+      position: relative;
+    }
+
+    .about-img {
+      border-radius: 8px;
+      box-shadow: 0 10px 30px var(--shadow-color);
+    }
+
+    .about-info {
+      margin-top: 2rem;
+    }
+
+    .about-info-item {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .about-info-icon {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-right: 10px;
+      min-width: 24px;
+    }
+
+    /* ===== 事業内容セクション ===== */
+    .services {
+      background-color: var(--base-color);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px var(--shadow-color);
+      transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px var(--shadow-color);
+    }
+
+    .service-img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 20px;
+    }
+
+    .service-title {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .service-text {
+      margin-bottom: 15px;
+    }
+
+    /* ===== 特許セクション ===== */
+    .patents {
+      background-color: #FFFFFF;
+    }
+
+    .patents-list {
+      list-style: none;
+    }
+
+    .patent-item {
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--primary-color);
+      background-color: var(--base-color);
+      border-radius: 0 8px 8px 0;
+      transition: transform var(--transition-speed);
+    }
+
+    .patent-item:hover {
+      transform: translateX(10px);
+    }
+
+    .patent-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .patent-number {
+      color: var(--secondary-color);
+      font-family: 'Rubik', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    /* ===== 施工事例セクション ===== */
+    .projects {
+      background-color: var(--base-color);
+    }
+
+    .projects-filter {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .filter-btn {
+      padding: 8px 20px;
+      margin: 5px;
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background-color: var(--primary-color);
+      color: var(--light-text);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-item {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 250px;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-speed);
+    }
+
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity var(--transition-speed);
+    }
+
+    .project-item:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .project-item:hover .project-img {
+      transform: scale(1.1);
+    }
+
+    .project-title {
+      color: var(--light-text);
+      margin-bottom: 10px;
+      transform: translateY(20px);
+      transition: transform var(--transition-speed);
+    }
+
+    .project-category {
+      color: var(--light-text);
+      font-size: 0.9rem;
+      transform: translateY(20px);
+      transition: transform var(--transition-speed);
+    }
+
+    .project-item:hover .project-title,
+    .project-item:hover .project-category {
+      transform: translateY(0);
+    }
+
+    /* ===== 採用情報セクション ===== */
+    .careers {
+      background-color: #FFFFFF;
+    }
+
+    .careers-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .careers-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .careers-image {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .careers-img {
+      border-radius: 8px;
+      box-shadow: 0 10px 30px var(--shadow-color);
+    }
+
+    .careers-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .careers-item {
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .careers-item:last-child {
+      border-bottom: none;
+    }
+
+    .careers-item-title {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    /* ===== お問い合わせセクション ===== */
+    .contact {
+      background-color: var(--base-color);
+    }
+
+    .contact-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .contact-icon {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      margin-right: 15px;
+      min-width: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 1rem;
+      transition: border-color var(--transition-speed);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    /* ===== フッター ===== */
+    .footer {
+      background-color: #222222;
+      color: #FFFFFF;
+      padding: 60px 0 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .footer-col {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+
+    .footer-logo-img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .footer-logo-text {
+      font-family: 'Rubik', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #FFFFFF;
+    }
+
+    .footer-text {
+      margin-bottom: 20px;
+      color: #AAAAAA;
+    }
+
+    .footer-title {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background-color: var(--primary-color);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-link {
+      margin-bottom: 10px;
+    }
+
+    .footer-link a {
+      color: #AAAAAA;
+      transition: color var(--transition-speed);
+    }
+
+    .footer-link a:hover {
+      color: #FFFFFF;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      margin-bottom: 15px;
+      color: #AAAAAA;
+    }
+
+    .footer-contact-icon {
+      color: var(--primary-color);
+      margin-right: 10px;
+      min-width: 20px;
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #444444;
+      text-align: center;
+    }
+
+    .footer-copyright {
+      color: #AAAAAA;
+      font-size: 0.9rem;
+    }
+
+    /* ===== スクロールトップボタン ===== */
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--primary-color);
+      color: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--transition-speed), visibility var(--transition-speed), background-color var(--transition-speed);
+      z-index: 999;
+    }
+
+    .scroll-top.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-top:hover {
+      background-color: #0055AA;
+    }
+
+    /* ===== アニメーション ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s, transform 1s;
+    }
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== レスポンシブデザイン ===== */
+    @media (max-width: 992px) {
+      :root {
+        --section-padding: 60px 0;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      .hero-title {
+        font-size: 2.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --header-height: 70px;
+        --section-padding: 50px 0;
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - var(--header-height));
+        background-color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        transition: left var(--transition-speed);
+        box-shadow: 2px 0 10px var(--shadow-color);
+      }
+
+      .nav-menu.active {
+        left: 0;
+      }
+
+      .nav-item {
+        margin: 0 0 20px 0;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .hamburger.active .hamburger-line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      .hamburger.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger.active .hamburger-line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+
+      .about-content,
+      .careers-content,
+      .contact-content {
+        flex-direction: column;
+      }
+
+      .about-image,
+      .careers-image {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 576px) {
+      :root {
+        --section-padding: 40px 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+
+      .btn {
+        padding: 10px 25px;
+      }
+
+      .projects-filter {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .filter-btn {
+        width: 80%;
+        margin: 5px 0;
+      }
+
+      .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="logo.png" alt="BOILER ENGINEERING ロゴ" style="height: 60px;">
+        <span class="logo-text">BOILER ENGINEERING</span>
+      </div>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link active">ホーム</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">会社概要</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">事業内容</a></li>
+          <li class="nav-item"><a href="#patents" class="nav-link">保有特許</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">施工事例</a></li>
+          <li class="nav-item"><a href="#careers" class="nav-link">採用情報</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">お問い合わせ</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">蒸気設備のプロフェッショナル<br>株式会社ボイラエンジニアリング</h1>
+        <p class="hero-subtitle">1978年創業。蒸気配管凍結防止システム、コンクリート蒸気養生制御装置など多数の特許技術を保有</p>
+        <a href="#contact" class="btn hero-btn">お問い合わせ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 会社概要セクション -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-title">
+        <h2>会社概要</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text fade-in">
+          <p>株式会社ボイラエンジニアリングは、1978年の創業以来、蒸気設備の設計・施工を専門とする会社として、多くのお客様から信頼をいただいてまいりました。</p>
+          <p>特に蒸気配管凍結防止システムやコンクリート蒸気養生制御装置など、独自の技術開発に力を入れ、多数の特許を取得しています。</p>
+          <p>私たちは「蒸気の新しい考え」を追求し、お客様の課題解決と省エネルギー化に貢献してまいります。</p>
+
+          <div class="about-info">
+            <div class="about-info-item">
+              <i class="about-info-icon fas fa-building"></i>
+              <div>
+                <strong>会社名：</strong>株式会社ボイラエンジニアリング
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="about-info-icon fas fa-map-marker-alt"></i>
+              <div>
+                <strong>所在地：</strong>〒007-0849 札幌市東区北49条東14丁目9番7号
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="about-info-icon fas fa-phone"></i>
+              <div>
+                <strong>電話番号：</strong>011-741-9011（代）
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="about-info-icon fas fa-fax"></i>
+              <div>
+                <strong>FAX：</strong>011-741-9034
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="about-info-icon fas fa-user"></i>
+              <div>
+                <strong>代表取締役：</strong>鳴海直衛
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="about-info-icon fas fa-briefcase"></i>
+              <div>
+                <strong>前職：</strong>外国航路貨物船:二等機関士
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="about-info-icon fas fa-history"></i>
+              <div>
+                <strong>設立：</strong>1978年
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image fade-in">
+          <img src="top_low_r.jpg" alt="ボイラエンジニアリング社屋" class="about-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 事業内容セクション -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-title">
+        <h2>事業内容</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <img src="miura.png" alt="三浦工業代理店" class="service-img"
+            style="object-fit: contain; width: auto; height: 60px;">
+          <div class="service-content">
+            <h3 class="service-title">三浦工業（株）代理店</h3>
+            <p class="service-text">三浦工業株式会社の正規代理店として、高品質なボイラー製品の提供と専門的なサポートを行っています。</p>
+          </div>
+        </div>
+
+        <div class="service-card fade-in">
+          <img src="samson.png" alt="株式会社サムソン" class="service-img"
+            style="object-fit: contain; width: auto; height: 60px;">
+          <div class="service-content">
+            <h3 class="service-title">株式会社サムソン</h3>
+            <p class="service-text">高品質な産業機器と専門的なソリューションを提供する株式会社サムソンとの連携により、お客様のニーズに最適な製品とサービスをお届けします。</p>
+          </div>
+        </div>
+
+        <div class="service-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1581093458791-9d09da56be89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            alt="工場省エネ蒸気設備設計施工" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">工場省エネ蒸気設備設計施工専門</h3>
+            <p class="service-text">工場の省エネルギー化を実現する蒸気設備の設計から施工までをトータルサポート。最適な設備設計で省エネと生産性向上を両立します。</p>
+          </div>
+        </div>
+
+        <div class="service-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            alt="工場省エネ電気計装工事" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">工場省エネ電気計装工事</h3>
+            <p class="service-text">最新の電気計装技術を活用し、工場の省エネルギー化を実現。自動制御システムの導入で効率的な運用を支援します。</p>
+          </div>
+        </div>
+
+        <div class="service-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1581093577421-f561a654a353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            alt="蒸気ボイラー据付付帯工事" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">蒸気ボイラー据付付帯工事設計施工</h3>
+            <p class="service-text">蒸気ボイラーの据付から付帯工事まで一貫して対応。安全性と効率性を考慮した設計・施工で、長期的な安定稼働を実現します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特許セクション -->
+  <section id="patents" class="section patents">
+    <div class="container">
+      <div class="section-title">
+        <h2>保有特許</h2>
+      </div>
+
+      <p class="mb-4">当社は蒸気設備に関する多数の特許技術を保有しています。これらの技術は省エネルギー化や効率化、安全性向上に貢献しています。</p>
+
+      <ul class="patents-list">
+        <li class="patent-item fade-in patent-clickable">
+          <h3 class="patent-title">蒸気配管系電磁弁減圧弁装置</h3>
+          <p class="patent-number">特許第7387188号</p>
+          <p>蒸気配管系における電磁弁と減圧弁を組み合わせた革新的な装置。省エネルギー化と安全性向上を実現します。</p>
+        </li>
+
+        <li class="patent-item fade-in">
+          <h3 class="patent-title">換気設備</h3>
+          <p class="patent-number">特許第7264530号</p>
+          <p>効率的な換気を実現する特許技術。エネルギー消費を抑えながら最適な環境を維持します。</p>
+        </li>
+
+        <li class="patent-item fade-in patent-clickable">
+          <h3 class="patent-title">Y型ストレーナ清掃装置</h3>
+          <p class="patent-number">特許第6086457号</p>
+          <p>Y型ストレーナの清掃を効率化する装置。メンテナンス性向上とダウンタイム削減に貢献します。</p>
+        </li>
+
+        <li class="patent-item fade-in patent-clickable">
+          <h3 class="patent-title">後養生制御機能付コンクリート二次製品養生制御装置</h3>
+          <p class="patent-number">特許第6033272号</p>
+          <p>コンクリート二次製品の養生プロセスを最適化する制御装置。品質向上とエネルギー効率化を両立します。</p>
+        </li>
+
+        <li class="patent-item fade-in">
+          <h3 class="patent-title">蒸気配管系凍結防止システム</h3>
+          <p class="patent-number">特許第6049104号</p>
+          <p>寒冷地での蒸気配管凍結を防止する革新的なシステム。安定稼働と省エネルギー化に貢献します。</p>
+        </li>
+
+        <li class="patent-item fade-in">
+          <h3 class="patent-title">ストックヤード骨材凍結防止装置</h3>
+          <p class="patent-number">特許第4257299号</p>
+          <p>ストックヤードの骨材凍結を防止する装置。寒冷地での作業効率向上と品質維持に貢献します。</p>
+        </li>
+
+        <li class="patent-item fade-in">
+          <h3 class="patent-title">コンクリート二次製品養生装置</h3>
+          <p class="patent-number">特許第3603796号</p>
+          <p>コンクリート二次製品の養生を効率的に行う装置。品質向上と生産性向上を実現します。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 採用情報セクション -->
+  <section id="careers" class="section careers">
+    <div class="container">
+      <div class="section-title">
+        <h2>人材募集中</h2>
+      </div>
+
+      <div class="careers-content">
+        <div class="careers-text fade-in">
+          <p>株式会社ボイラエンジニアリングでは、「蒸気の新しい考え」に猪突猛進する人材を求めています。学歴不問、やる気と向上心のある方をお待ちしています。</p>
+
+          <ul class="careers-list">
+            <li class="careers-item">
+              <h3 class="careers-item-title">募集要項</h3>
+              <p>学歴不問・経験者優遇。蒸気設備に情熱を持ち、革新的な技術と持続可能なソリューションの開発に意欲的に取り組める方を求めています。チームワークを重視し、顧客満足度向上に貢献できる人材を歓迎します。</p>
+            </li>
+            <li class="careers-item">
+              <h3 class="careers-item-title">給与</h3>
+              <p>給与30万円3か月の試用期間終了後は35万以上。</p>
+            </li>
+            <li class="careers-item">
+              <h3 class="careers-item-title">応募方法</h3>
+              <p>下記お問い合わせフォームページより「採用応募」の旨をご記入の上、ご連絡ください。</p>
+            </li>
+          </ul>
+
+          <div class="text-center mt-4">
+            <a href="contact.html" class="btn btn-accent">応募する</a>
+          </div>
+        </div>
+
+        <div class="careers-image fade-in">
+          <img src="cicago_R.jpg" alt="採用情報" class="careers-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせセクション -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>お問い合わせ</h2>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info fade-in">
+          <p>お見積り、ご相談、採用応募など、お気軽にお問い合わせください。</p>
+
+          <div class="contact-item">
+            <i class="contact-icon fas fa-map-marker-alt"></i>
+            <div>
+              <h3>所在地</h3>
+              <p>〒007-0849<br>札幌市東区北49条東14丁目9番7号</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="contact-icon fas fa-phone"></i>
+            <div>
+              <h3>電話番号</h3>
+              <p>011-741-9011（代）</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="contact-icon fas fa-fax"></i>
+            <div>
+              <h3>FAX</h3>
+              <p>011-741-9034</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="contact-icon fas fa-envelope"></i>
+            <div>
+              <h3>メールアドレス</h3>
+              <p>info@boiler-e.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form fade-in">
+          <div class="google-form-container">
+            <h3>お問い合わせフォーム</h3>
+            <p>以下のボタンをクリックして、お問い合わせフォームからご連絡ください。</p>
+            <a href="contact.html" class="btn btn-primary">お問い合わせフォームを開く</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="logo.png" alt="BOILER ENGINEERING ロゴ" style="height: 60px;">
+            <div class="footer-logo-text">BOILER ENGINEERING</div>
+          </div>
+          <p class="footer-text">1978年創業。蒸気設備専門の会社として、多くのお客様から信頼をいただいております。</p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">サイトマップ</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#home">ホーム</a></li>
+            <li class="footer-link"><a href="#about">会社概要</a></li>
+            <li class="footer-link"><a href="#services">事業内容</a></li>
+            <li class="footer-link"><a href="#patents">保有特許</a></li>
+            <li class="footer-link"><a href="#projects">施工事例</a></li>
+            <li class="footer-link"><a href="#careers">採用情報</a></li>
+            <li class="footer-link"><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">お問い合わせ</h3>
+          <div class="footer-contact-item">
+            <i class="footer-contact-icon fas fa-map-marker-alt"></i>
+            <p>〒007-0849 札幌市東区北49条東14丁目9番7号</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="footer-contact-icon fas fa-phone"></i>
+            <p>011-741-9011（代）</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="footer-contact-icon fas fa-fax"></i>
+            <p>011-741-9034</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="footer-contact-icon fas fa-globe"></i>
+            <p>http://www.boiler-e.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2022 BOILER ENGINEERING CO.LTD. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- スクロールトップボタン -->
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="patent-details.js"></script>
+  <script>
+    // ハンバーガーメニュー
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // ナビゲーションリンクをクリックしたらメニューを閉じる
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // スクロールに応じてヘッダーの表示/非表示
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop && scrollTop > 200) {
+        header.classList.add('hidden');
+      } else {
+        header.classList.remove('hidden');
+      }
+
+      lastScrollTop = scrollTop;
+    });
+
+    // スクロールトップボタン
+    const scrollTopBtn = document.querySelector('.scroll-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.add('active');
+      } else {
+        scrollTopBtn.classList.remove('active');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // スクロールアニメーション
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const fadeIn = () => {
+      fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', fadeIn);
+    window.addEventListener('load', fadeIn);
+
+    // プロジェクトフィルター
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // アクティブクラスの切り替え
+        filterBtns.forEach(btn => btn.classList.remove('active'));
+        btn.classList.add('active');
+
+        // フィルタリング
+        const filter = btn.getAttribute('data-filter');
+
+        projectItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // お問い合わせフォーム送信
+    const contactForm = document.getElementById('contactForm');
+
+    // Formspreeを使用するため、submitイベントのデフォルト動作を妨げない
+    // フォーム送信後の処理
+    contactForm.addEventListener('submit', function () {
+      // 送信完了メッセージ（フォームが送信される前に表示）
+      setTimeout(function () {
+        alert('お問い合わせありがとうございます。\n\nFormspreeを通じてメッセージが送信されました。');
+      }, 1000);
+    });
+
+    // アクティブなナビゲーションリンクの設定
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
