@@ -28,7 +28,7 @@ const patentDetails = {
       "メンテナンスコストの削減",
       "安全性の向上"
     ],
-    image: "solenoid-valve/solenoid_valve_illustration.jpg"
+    image: "solenoid-valve/pressure_reducing_valve_patent.jpg"
   },
   "7264530": {
     title: "換気設備",
