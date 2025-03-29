@@ -240,7 +240,7 @@ const patentDetails = {
     details: `
       <div style="display: flex; justify-content: center; margin-bottom: 20px;">
         <div style="text-align: center; max-width: 100%;">
-          <img src="concrete_second/patent_certificate.jpg" alt="コンクリート二次製品養生装置 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
+          <img src="concrete_second/concrete_secondary_product_patent.jpg" alt="コンクリート二次製品養生装置 特許証" style="max-width: 100%; height: auto; margin: 0 auto;">
           <p style="margin-top: 8px; font-style: italic;">特許証</p>
         </div>
       </div>
