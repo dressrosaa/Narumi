@@ -485,35 +485,278 @@
 
     /* ===== 特許セクション ===== */
     .patents {
-      background-color: #FFFFFF;
+      background-color: var(--base-color);
     }
 
-    .patents-list {
-      list-style: none;
+    .patents-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
     }
 
     .patent-item {
-      padding: 20px;
-      margin-bottom: 20px;
-      border-left: 4px solid var(--primary-color);
-      background-color: var(--base-color);
-      border-radius: 0 8px 8px 0;
-      transition: transform var(--transition-speed);
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px var(--shadow-color);
+      transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .patent-item:hover {
-      transform: translateX(10px);
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px var(--shadow-color);
+    }
+
+    .patent-image {
+      height: 200px;
+      /* 高さを固定 */
+      overflow: hidden;
+      /* はみ出た部分を隠す */
+      position: relative;
+      /* 追加 */
+    }
+
+    .patent-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* 画像比率を維持しながら領域を埋める */
+      object-position: center;
+      /* 中央を表示 */
+      transition: transform 0.5s ease;
+      /* ホバーエフェクト用 */
+    }
+
+    .patent-item:hover .patent-image img {
+      transform: scale(1.1);
+      /* ホバー時に少し拡大 */
+    }
+
+    .patent-content {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
     }
 
     .patent-title {
       font-size: 1.2rem;
       margin-bottom: 10px;
+      font-weight: 700;
     }
 
     .patent-number {
-      color: var(--secondary-color);
-      font-family: 'Rubik', sans-serif;
+      color: var(--primary-color);
+      font-weight: 600;
       margin-bottom: 10px;
+    }
+
+    .patent-description {
+      color: var(--text-color-light);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    /* 特許モーダル */
+    .patent-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .patent-modal.show {
+      display: block;
+    }
+
+    .patent-modal-content {
+      background-color: #FFFFFF;
+      max-width: 800px;
+      margin: 50px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .patent-modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+    }
+
+    .patent-modal-header {
+      padding: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .patent-modal-title {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    .patent-modal-number {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    .patent-modal-body {
+      padding: 20px;
+    }
+
+    .patent-modal-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .patent-modal-description {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .patent-modal-details h4 {
+      margin: 20px 0 10px;
+      font-weight: 700;
+    }
+
+    .patent-modal-details ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .patent-modal-details li {
+      margin-bottom: 8px;
+    }
+
+    .patent-modal-footer {
+      padding: 15px 20px;
+      border-top: 1px solid var(--border-color);
+      text-align: right;
+    }
+
+    .patent-modal-close-btn {
+      padding: 8px 20px;
+    }
+
+    /* 特許モーダル内の追加画像 */
+    .centered-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .patent-modal-additional-image {
+      max-width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+
+    .additional-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+      justify-content: center;
+    }
+
+    .additional-images img {
+      max-width: calc(50% - 15px);
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* 特許詳細ページの装置画像 */
+    .equipment-title {
+      margin: 30px 0 15px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .equipment-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .equipment-image-wrapper {
+      flex: 1;
+      min-width: 200px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .equipment-image {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 3px 10px var(--shadow-color);
+    }
+
+    .image-caption {
+      margin-top: 8px;
+      font-style: italic;
+      color: var(--text-color-light);
+    }
+
+    .patent-section {
+      margin-bottom: 30px;
+    }
+
+    .patent-section p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .patent-section ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .patent-section li {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .patents-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
+
+      .patent-image {
+        height: 180px;
+        /* モバイルでは少し小さく */
+      }
+
+      .additional-images img {
+        max-width: 100%;
+        /* モバイルでは1列に */
+      }
+
+      .equipment-images {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .equipment-image-wrapper {
+        max-width: 100%;
+      }
     }
 
     /* ===== 施工事例セクション ===== */
