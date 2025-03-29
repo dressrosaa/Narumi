@@ -42,11 +42,53 @@ const patentDetails = {
     title: "Y型ストレーナ清掃装置",
     number: "特許第6086457号",
     description: "Y型ストレーナの清掃を効率化する装置。メンテナンス性向上とダウンタイム削減に貢献します。",
-    details: "本特許は、配管系統で広く使用されるY型ストレーナの清掃作業を大幅に効率化する装置です。従来は配管を停止して分解清掃が必要でしたが、本装置を使用することで運転中でも清掃が可能となり、ダウンタイムを最大90%削減することができます。",
+    details: `
+      <div class="patent-section">
+        <p>本特許は、配管系統で広く使用されるY型ストレーナの清掃作業を大幅に効率化する装置です。従来は配管を停止して分解清掃が必要でしたが、本装置を使用することで運転中でも清掃が可能となり、ダウンタイムを最大90%削減することができます。</p>
+        
+        <p>適時バイパス弁を開くことにより、0.7MPa（流速30m/sec）の圧力によりY型ストレーナーの清掃ができ省力化となります。</p>
+        
+        <ul>
+          <li>Y型トラップ装置及び各ストレーナを外しての清掃不要。</li>
+          <li>他のトラップ装置とは違い、垂直取り付けが可能です。</li>
+          <li>バイパス弁での検水、水抜兼用できます。</li>
+        </ul>
+      </div>
+      
+      <div class="equipment-images-container">
+        <h4 class="equipment-title">装置の設置例</h4>
+        <div class="equipment-images">
+          <div class="equipment-image-wrapper">
+            <img src="Ytype/vertical-mount.jpg" alt="Y型ストレーナ清掃装置 垂直取り付け" class="equipment-image">
+            <p class="image-caption">垂直取り付け</p>
+          </div>
+          <div class="equipment-image-wrapper">
+            <img src="Ytype/horizontal-mount.jpg" alt="Y型ストレーナ清掃装置 水平取り付け" class="equipment-image">
+            <p class="image-caption">水平取り付け</p>
+          </div>
+          <div class="equipment-image-wrapper">
+            <img src="Ytype/horizontal-mount-bypass-valve.jpg" alt="Y型ストレーナ清掃装置 バイパス弁" class="equipment-image">
+            <p class="image-caption">バイパス弁設置例</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="centered-image">
+        <img src="Ytype/2020-encouragement-award.jpg" alt="2020年奨励賞受賞" class="patent-image">
+        <p class="image-caption">2020年奨励賞受賞</p>
+      </div>
+    `,
     features: [
       "Y型ストレーナーの清掃ができ省力化となります",
       "Y型トラップ装置及び各ストレーナを外しての清掃不要",
+      "他のトラップ装置とは違い、垂直取り付けが可能",
       "バイパス弁での検水、水抜兼用できます"
+    ],
+    benefits: [
+      "ダウンタイムを最大90%削減",
+      "メンテナンス作業の大幅な効率化",
+      "設置の自由度が高い",
+      "運転中でも清掃可能"
     ],
     additionalImages: [
       "Ytype/2020-encouragement-award.jpg",
