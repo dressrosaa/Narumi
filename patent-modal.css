@@ -163,9 +163,11 @@ header {
   background-color: #000;
   color: #0066CC;
 }
+
 header a {
   color: #0066CC;
 }
+
 header a:hover {
   opacity: 0.8;
 }
@@ -182,7 +184,8 @@ header a:hover {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -213,4 +216,76 @@ header a:hover {
   border: none;
   border-radius: 4px;
   text-decoration: none;
+}
+
+/* 特許詳細ページのスタイル改善 */
+.centered-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.patent-image {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.patent-section {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.equipment-images-container {
+  margin: 30px 0;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.equipment-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.equipment-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.equipment-image-wrapper {
+  flex: 1;
+  min-width: 250px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.equipment-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.patent-note {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #ddd;
+  font-size: 0.9em;
+}
+
+.patent-modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 20px;
 }

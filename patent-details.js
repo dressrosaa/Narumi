@@ -61,36 +61,52 @@ const patentDetails = {
     description: "コンクリート二次製品の養生プロセスを最適化する制御装置。品質向上とエネルギー効率化を両立します。",
     details: `
       <div class="centered-image">
-        <img src="post-curing/patent-certificate-winter-post-curing-device-2016-11-04.jpg" alt="特許証明書 - 後養生制御機能付コンクリート二次製品養生制御装置">
+        <img src="post-curing/patent-certificate-winter-post-curing-device-2016-11-04.jpg" alt="特許証明書 - 後養生制御機能付コンクリート二次製品養生制御装置" class="patent-image">
       </div>
-      <p>本特許は、コンクリート二次製品の製造過程における養生プロセスを最適化する制御装置です。
-      特に後養生過程を精密に制御することで、製品品質の向上とエネルギー消費の削減を同時に実現します。
-      温度・湿度・時間を製品特性に合わせて最適制御することで、従来比20%の品質向上と15%のエネルギー削減を達成しています。</p>
+      <div class="patent-section">
+        <p>本特許は、コンクリート二次製品の製造過程における養生プロセスを最適化する制御装置です。
+        特に後養生過程を精密に制御することで、製品品質の向上とエネルギー消費の削減を同時に実現します。
+        温度・湿度・時間を製品特性に合わせて最適制御することで、従来比20%の品質向上と15%のエネルギー削減を達成しています。</p>
+      </div>
 
-      <p>弊社で電動弁を採用しないのは、素早い開閉が出来ず、特に微開時に配管の手前と末端で蒸気の出方が均一になりにくいためです。
-      結果として養生製品の品質にムラが出るので、自動養生制御には電動弁よりも電磁弁が適しています。
-      また、価格も電磁弁より電動弁のほうが高価なため、コンクリート二次製品工場では電磁弁を標準仕様としています。
-      近年、コンクリート二次製品の品質向上の為、寒冷地での温度管理が可能な後養生制御が注目されています。</p>
+      <div class="patent-section">
+        <p>弊社で電動弁を採用しないのは、素早い開閉が出来ず、特に微開時に配管の手前と末端で蒸気の出方が均一になりにくいためです。
+        結果として養生製品の品質にムラが出るので、自動養生制御には電動弁よりも電磁弁が適しています。
+        また、価格も電磁弁より電動弁のほうが高価なため、コンクリート二次製品工場では電磁弁を標準仕様としています。
+        近年、コンクリート二次製品の品質向上の為、寒冷地での温度管理が可能な後養生制御が注目されています。</p>
+      </div>
+
       <div class="centered-image">
-        <img src="post-curing/graph.jpg" alt="後養生制御グラフ - 温度変化の推移">
-      </div>
-      <p>冬期の本養正終了後、急激な温度低下により製品品質に影響がないよう、後養生の下降勾配を設定できるようになりました。
-      一般的な養正装置にはない機能です。温度・時間・勾配設定は1台で1パターンです。（指示調節計及びタイマーで簡単に設定変更可能）
-      後養生下降は、外気温度が低い際蒸気噴射により急激な温度下降を防ぐもので、強制的に下降はできません。
-      別途装置が必要となり、高価格となります。</p>
-
-      <div class="equipment-images">
-        <img src="post-curing/equipment.jpg" alt="養生制御装置の外観" class="equipment-image">
-        <img src="post-curing/equipment-structure.png" alt="養生制御装置の構造図" class="equipment-image">
+        <img src="post-curing/graph.jpg" alt="後養生制御グラフ - 温度変化の推移" class="patent-image">
       </div>
 
-      <p class="note">※基本的に即納<br>
-      ※標準電圧　KATT-9HBC 100V 50/60Hz (1.2A) + 電磁弁20A～25A 100V 50/60Hz (1.64A) ＝ 100V (2.84A)</p>
+      <div class="patent-section">
+        <p>冬期の本養正終了後、急激な温度低下により製品品質に影響がないよう、後養生の下降勾配を設定できるようになりました。
+        一般的な養正装置にはない機能です。温度・時間・勾配設定は1台で1パターンです。（指示調節計及びタイマーで簡単に設定変更可能）
+        後養生下降は、外気温度が低い際蒸気噴射により急激な温度下降を防ぐもので、強制的に下降はできません。
+        別途装置が必要となり、高価格となります。</p>
+      </div>
+
+      <div class="equipment-images-container">
+        <h4 class="equipment-title">装置外観と構造図</h4>
+        <div class="equipment-images">
+          <div class="equipment-image-wrapper">
+            <img src="post-curing/equipment.jpg" alt="養生制御装置の外観" class="equipment-image">
+            <p class="image-caption">養生制御装置の外観</p>
+          </div>
+          <div class="equipment-image-wrapper">
+            <img src="post-curing/equipment-structure.png" alt="養生制御装置の構造図" class="equipment-image">
+            <p class="image-caption">養生制御装置の構造図</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="patent-note">
+        <p>※基本的に即納<br>
+        ※標準電圧　KATT-9HBC 100V 50/60Hz (1.2A) + 電磁弁20A～25A 100V 50/60Hz (1.64A) ＝ 100V (2.84A)</p>
+      </div>
     `,
-    additionalImages: [
-      "post-curing/equipment.jpg",
-      "post-curing/equipment-structure.png"
-    ]
+    additionalImages: []
   },
   "6049104": {
     title: "蒸気配管系凍結防止システム",
@@ -219,16 +235,18 @@ function showPatentModal(patentNumber) {
         <p class="patent-modal-number">${patent.number}</p>
       </div>
       <div class="patent-modal-body">
-        ${imageHtml}
-        ${centeredImageHtml}
-        <p class="patent-modal-description">${patent.details}</p>
-        <div class="patent-modal-details">
-          ${featuresHtml}
-        </div>
-        ${additionalImagesHtml}
-        <div class="patent-modal-details">
-          ${benefitsHtml}
-        </div>
+        ${patent.details || `
+          ${imageHtml}
+          ${centeredImageHtml}
+          <p class="patent-modal-description">${patent.description}</p>
+          <div class="patent-modal-details">
+            ${featuresHtml}
+          </div>
+          ${additionalImagesHtml}
+          <div class="patent-modal-details">
+            ${benefitsHtml}
+          </div>
+        `}
       </div>
       <div class="patent-modal-footer">
         <button class="btn btn-primary patent-modal-close-btn">閉じる</button>
