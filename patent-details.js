@@ -43,6 +43,11 @@ const patentDetails = {
     number: "特許第6086457号",
     description: "Y型ストレーナの清掃を効率化する装置。メンテナンス性向上とダウンタイム削減に貢献します。",
     details: `
+      <div class="centered-image">
+        <img src="Ytype/Y_type_strainer_patent.jpg" alt="Y型ストレーナ清掃装置 特許証" class="patent-image">
+        <p class="image-caption">特許証</p>
+      </div>
+      
       <div class="patent-section">
         <p>本特許は、配管系統で広く使用されるY型ストレーナの清掃作業を大幅に効率化する装置です。従来は配管を停止して分解清掃が必要でしたが、本装置を使用することで運転中でも清掃が可能となり、ダウンタイムを最大90%削減することができます。</p>
         
@@ -72,11 +77,6 @@ const patentDetails = {
           </div>
         </div>
       </div>
-      
-      <div class="centered-image">
-        <img src="Ytype/2020-encouragement-award.jpg" alt="2020年奨励賞受賞" class="patent-image">
-        <p class="image-caption">2020年奨励賞受賞</p>
-      </div>
     `,
     features: [
       "Y型ストレーナーの清掃ができ省力化となります",
@@ -91,7 +91,6 @@ const patentDetails = {
       "運転中でも清掃可能"
     ],
     additionalImages: [
-      "Ytype/2020-encouragement-award.jpg",
       "Ytype/vertical-mount.jpg",
       "Ytype/horizontal-mount.jpg",
       "Ytype/horizontal-mount-bypass-valve.jpg"
