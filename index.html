@@ -602,6 +602,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
+      align-items: center;
     }
 
     .careers-text {
@@ -612,11 +613,19 @@
     .careers-image {
       flex: 1;
       min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .careers-img {
       border-radius: 8px;
       box-shadow: 0 10px 30px var(--shadow-color);
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      max-height: 400px;
     }
 
     .careers-list {
