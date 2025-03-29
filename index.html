@@ -445,6 +445,8 @@
       overflow: hidden;
       box-shadow: 0 5px 15px var(--shadow-color);
       transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+      display: flex;
+      flex-direction: column;
     }
 
     .service-card:hover {
@@ -454,16 +456,24 @@
 
     .service-img {
       height: 200px;
-      object-fit: cover;
+      object-fit: contain;
+      width: 100%;
+      padding: 20px;
+      display: block;
+      margin: 0 auto;
     }
 
     .service-content {
       padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
     }
 
     .service-title {
       font-size: 1.3rem;
       margin-bottom: 10px;
+      text-align: center;
     }
 
     .service-text {
@@ -1097,8 +1107,7 @@
 
       <div class="services-grid">
         <div class="service-card fade-in">
-          <img src="miura.png" alt="三浦工業代理店" class="service-img"
-            style="object-fit: contain; width: auto; height: 60px;">
+          <img src="miura.png" alt="三浦工業代理店" class="service-img">
           <div class="service-content">
             <h3 class="service-title">三浦工業（株）代理店</h3>
             <p class="service-text">三浦工業株式会社の正規代理店として、高品質なボイラー製品の提供と専門的なサポートを行っています。</p>
